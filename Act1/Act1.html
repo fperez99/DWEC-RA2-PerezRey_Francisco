@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Actividad 1</title>
+  </head>
+  <body onload="mostrarSaludo()"></body>
+
+  <div id="saludo" class="mb-5 mt-5">
+    <div id="txtsaludo"></div>
+  </div>
+  <script>
+    //Creamos una función donde tenemos todo el código
+    function mostrarSaludo() {
+      //variables con la hora actual
+      fecha = new Date();
+      hora = fecha.getHours();
+
+      //Creacion de un if para que segun la hora que sea se muestre una cosa o otra
+      if (hora >= 0 && hora < 12) {
+        texto = "Buenos Dias";
+      }
+      if (hora >= 12 && hora < 18) {
+        texto = "Buenas Tardes";
+      }
+      if (hora >= 18 && hora < 24) {
+        texto = "Buenas Noches";
+      }
+      document.getElementById("txtsaludo").innerHTML = texto;
+    }
+  </script>
+</html>

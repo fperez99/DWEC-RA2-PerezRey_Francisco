@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Actividad 5</title>
+    <script>
+      //Array dado en el ejercicio
+      let valores = [true, 5, false, "hola", "adios", 2];
+
+      //
+      let resultado = valores[3] > valores[4];
+      alert(resultado);
+
+      let valor1 = valores[0];
+      let valor2 = valores[2];
+
+      let resultados = valor1 || valor2;
+      alert(resultados);
+
+      resultado = valor1 && valor2;
+      alert(resultado);
+
+      //Creamos las variables con los dos numeros del array
+      //Hacemos la suma, resta, multiplicacion y division
+      let num1 = valores[1];
+      let num2 = valores[5];
+
+      let suma = num1 + num2;
+      alert("La suma de " + num1 + "+" + num2 + " es " + suma);
+
+      let resta = num1 - num2;
+      alert("La resta de " + num1 + "-" + num2 + " es " + resta);
+
+      let multiplicacion = num1 * num2;
+      alert(
+        "La multiplicación de " + num1 + "*" + num2 + " es " + multiplicacion
+      );
+
+      let division = num1 / num2;
+      alert("La división de " + num1 + "/" + num2 + " es " + division);
+
+      let modulo = num1 % num2;
+      alert(
+        "La división de " +
+          num1 +
+          "/" +
+          num2 +
+          " dando un numero entero es " +
+          modulo
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

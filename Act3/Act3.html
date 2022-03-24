@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Actividad 3</title>
+    <script>
+      //Pedimos por teclado un número para hacer su factorial
+      let numero = prompt("Introduce un numero para mostrar su factorial");
+      let resultado = 1;
+
+      //Formula para hacer el factorial del numero que nos han dado
+      for (var i = 1; i <= numero; i++) {
+        resultado *= i;
+      }
+      //Imprimimos tanto por un cuadro de dialogo y por pantalla el resultado
+      alert(resultado);
+      document.write(`resultado es ${resultado}`);
+    </script>
+  </head>
+</html>

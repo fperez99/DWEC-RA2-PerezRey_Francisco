@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Actividad 2</title>
+
+    <script>
+      //Array que nos da el ejercicio
+      let letras = [
+        "T",
+        "R",
+        "W",
+        "A",
+        "G",
+        "M",
+        "Y",
+        "F",
+        "P",
+        "D",
+        "X",
+        "B",
+        "N",
+        "J",
+        "Z",
+        "S",
+        "Q",
+        "V",
+        "H",
+        "L",
+        "C",
+        "K",
+        "E",
+        "T",
+      ];
+      //Pedimos por teclado el numero del DNI
+      let numero = prompt("Introduce tu numero de DNI");
+
+      //Creación del if para comprobar la letra
+      if (numero < 0 || numero > 99999999) {
+        alert("El numero no es valido");
+      } else {
+        let letraCalculada = letras[numero % 23];
+        document.write(`El DNI es: ${numero}${letraCalculada}`);
+      }
+    </script>
+  </head>
+</html>
